@@ -110,8 +110,8 @@ def do_convert():
             test_examples = _create_cls_examples(
                 raw_examples[p2:], args.prompt_prefix, args.options)
 
-        _save_examples(args.save_dir, "train.txt", train_examples)
-        _save_examples(args.save_dir, "dev.txt", dev_examples)
+        _save_examples(args.save_dir, "train_ccks.txt", train_examples)
+        _save_examples(args.save_dir, "dev_ccks.txt", dev_examples)
         _save_examples(args.save_dir, "test.txt", test_examples)
 
     logger.info('Finished! It takes %.2f seconds' % (time.time() - tic_time))
